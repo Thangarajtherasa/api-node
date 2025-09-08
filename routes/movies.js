@@ -1,6 +1,7 @@
 import express from 'express';
 import {
     MovieIndex,
+    MovieDetails,
     MovieCreate,
     MovieUpdate,
     MovieDelete
@@ -12,8 +13,11 @@ const router = express.Router();
 // get - for retrieving data
 router.get('/', MovieIndex);
 
+router.get('/:id', MovieDetails);
+
 //c- for creating movies  
 router.post ('/', MovieCreate);
+
 
 //u - for updating movie
 router.put('/:id', MovieUpdate );
