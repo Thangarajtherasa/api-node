@@ -1,7 +1,12 @@
 import express from 'express';
-import {MovieIndex,MovieCreate, MovieUpdate, MovieDelete} from '../controllers/movies.con.js';
+import {
+    MovieIndex,
+    MovieCreate,
+    MovieUpdate,
+    MovieDelete
+} from '../controllers/movies.con.js';
 
-const router =express.Router();
+const router = express.Router();
 
 // /movie/movies
 // get - for retrieving data
